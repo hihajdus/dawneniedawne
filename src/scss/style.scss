@@ -7,18 +7,54 @@ body {
 
 /********* imports *********/
 
-@import 'modules/reset';
-@import 'modules/fonts';
-@import 'modules/grid';
-@import 'modules/images';
-@import 'modules/settings';
-@import 'modules/media';
+@import 'reset';
+@import 'fonts';
+@import 'grid';
+@import 'images';
+@import 'settings';
+/*@import 'media';*/
 
 /********* content *********/
 
-/* ---- NAV ---- */
+body {
 
+}
 
+#content {
+	width: 100%;
+	// max-width: 1000px;
+	// margin: 0 auto 10px;
+	background-color: white;
+}
+
+header {
+	background-color: yellow;
+	height: 100vh;
+	nav {
+
+	}
+	hgroup {
+
+	}
+}
+
+section {
+	#about {
+		background-color: green;
+		height: 100vh;
+	}
+	#work {
+		background-color: blue;
+		height: 200vh;
+	}
+}
+
+footer {
+	#contact {
+		background-color: purple;
+		height: 100vh;
+	}
+}
 
 
 
