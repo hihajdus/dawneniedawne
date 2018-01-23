@@ -25,16 +25,22 @@ body {
 	// max-width: 1000px;
 	// margin: 0 auto 10px;
 	background-color: white;
+	padding: 10px;
 }
 
 header {
 	background-color: yellow;
 	height: 100vh;
 	nav {
-
+		height: 80px;
 	}
-	hgroup {
-
+	hgroup {	
+		height: 200px;
+		min-height: 300px;
+		div {
+			width: 80%;
+			margin: 0 auto;
+		}	
 	}
 }
 
@@ -42,6 +48,29 @@ section {
 	#about {
 		background-color: green;
 		height: 100vh;
+		display: flex;
+		flex-direction: column-reverse;
+		.container {
+			height: 50%;
+		}
+		.text-about {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			div {
+				width: 80%;
+				margin: 0 auto;
+			}
+		}
+		.img-about {
+			.img-body {
+				height: 100%;
+				width: 100%;
+				display: block;
+
+				// transform: rotate(-90deg);				
+			}
+		}
 	}
 	#work {
 		background-color: blue;
@@ -57,4 +86,13 @@ footer {
 }
 
 
+// .header {
+//   height: auto;
+//   justify-content: inherit;
+//   align-items: inherit;
+// }
 
+// .photo img {
+//   width: 100%;
+//   display: block;
+// }
