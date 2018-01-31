@@ -1,30 +1,14 @@
-/*$mobile: "(max-width: 767px)";
-$tablet: "(max-width: 1024px)";
-$desktop: "(min-width: 1025px)";
-
-@media #{$desktop} {
-	body {
-		background: white;
-	}
-}
-
-@media #{$tablet} {
-	body {
-		// background: lightblue;
-	}
-}
-
-@media #{$mobile} {
-	body {
-		// background: lightgreen;
-	}
-}*/
-
-/*==========  Mobile First Method  ==========*/
-
-/*$extraSmall: "(min-width : 480px)";
+$thin: "(min-width : 480px)";
 $small: "(min-width : 768px)";
 $medium: "(min-width : 992px)";
 $large: "(min-width : 1200px)";
-	*/
+
+
+@media #{$thin} {
+	body {
+		// background: red;
+	}
+}
+
+	
 		

@@ -1,5 +1,4 @@
-/*@import "settings";
-
+/*
 body {
     background-color: $color-bg;
     color: $color-text;
@@ -12,7 +11,7 @@ body {
 @import 'grid';
 @import 'images';
 @import 'settings';
-/*@import 'media';*/
+@import 'media';
 
 /********* content *********/
 
@@ -29,7 +28,7 @@ body {
 }
 
 header {
-	background-color: yellow;
+	background-color: lightyellow;
 	height: 100vh;
 	nav {
 		height: 80px;
@@ -46,7 +45,7 @@ header {
 
 section {
 	#about {
-		background-color: green;
+		background-color: lightgreen;
 		height: 100vh;
 		display: flex;
 		flex-direction: column-reverse;
@@ -73,14 +72,58 @@ section {
 		}
 	}
 	#work {
-		background-color: blue;
-		height: 200vh;
+		background-color: lightblue;
+		// height: 200vh;
+		// @media #{$thin} {
+			margin: 0 auto;
+			max-width: 1600px;			
+		// }
+		.grid {
+			.square {	
+	    		float: left;
+	    		position: relative;
+	    		// width: 30%;
+	    		// margin: 1.66%;
+	    		width: 96%;
+				margin: 2%;
+	    		background-position: center center;
+	    		background-repeat: no-repeat;
+	    		background-size: cover;
+	    		// padding-bottom: 30%;	
+	    		padding-bottom: 90%;		
+			}
+			@media #{$thin} {
+				
+			}
+				// .square {
+				// 	display: block;
+				// 	max-width: 100%;
+				// 	width: 100px;
+				// 	height: 100px;
+				// 	background-color: rebeccapurple;
+				// 	margin: 0 auto;				
+				// }
+			@media #{$small} {
+				.square {
+					width: 45%;
+					padding-bottom: 43%;
+					margin: 2.5%;	
+				}
+			}
+			@media #{$medium} {
+				.square {
+					width: 30%;
+	    			margin: 1.66%;
+	    			padding-bottom: 30%;	
+				}					
+			}
+		}
 	}
 }
 
 footer {
 	#contact {
-		background-color: purple;
+		background-color: lightpurple;
 		height: 100vh;
 	}
 }
