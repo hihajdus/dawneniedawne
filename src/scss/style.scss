@@ -80,17 +80,36 @@ section {
 		// }
 		.grid {
 			.square {	
-	    		float: left;
-	    		position: relative;
+	    		// float: left;
+	    		// position: relative;
 	    		// width: 30%;
 	    		// margin: 1.66%;
+	    		position: relative;
 	    		width: 96%;
 				margin: 2%;
 	    		background-position: center center;
 	    		background-repeat: no-repeat;
 	    		background-size: cover;
 	    		// padding-bottom: 30%;	
-	    		padding-bottom: 90%;		
+	    		padding-bottom: 90%;
+	    		opacity: 1;
+	    		transition: all .25s ease-out;
+	    		&:hover {
+	    			opacity: 0.6;
+	    			span {
+						opacity: 1;
+					}
+	    		}
+	    		span {
+					position: absolute;
+					top: 50%;
+					right: 50%;
+					opacity: 0;
+					z-index: 1;
+					vertical-align: bottom;
+					text-align: center;
+					transition: all .25s ease-out;	    			
+	    		}		
 			}
 			@media #{$thin} {
 				
