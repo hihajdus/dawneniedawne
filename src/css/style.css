@@ -391,14 +391,98 @@ $color-text: white;
 header {
   background-color: lightyellow;
   height: 100vh; }
-  header nav {
-    height: 80px; }
-  header hgroup {
-    height: 200px;
-    min-height: 300px; }
-    header hgroup div {
-      width: 80%;
-      margin: 0 auto; }
+
+nav {
+  height: 80px;
+  /* 
+	 * Transform all the slices of hamburger
+	 * into a crossmark.
+	 */
+  /*
+	 * But let's hide the middle one.
+	 */
+  /*
+	 * Ohyeah and the last one should go the other direction
+	 */
+  /*
+	 * Make this absolute positioned
+	 * at the top left of the screen
+	 */
+  /*
+	 * And let's slide it in from the left
+	 */ }
+  nav a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease; }
+  nav #menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    user-select: none; }
+  nav #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */ }
+  nav #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+  nav #menuToggle span:first-child {
+    transform-origin: 0% 0%; }
+  nav #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%; }
+  nav #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323; }
+  nav #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2); }
+  nav #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px); }
+  nav #menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+  nav #menu li {
+    padding: 10px 0;
+    font-size: 22px; }
+  nav #menuToggle input:checked ~ ul {
+    transform: none; }
+
+hgroup {
+  height: 200px;
+  min-height: 300px; }
+  hgroup div {
+    width: 80%;
+    margin: 0 auto; }
 
 section #about {
   background-color: lightgreen;
@@ -424,12 +508,10 @@ section #work {
   margin: 0 auto;
   max-width: 1600px; }
   section #work .grid .square {
+    float: left;
     position: relative;
     width: 96%;
     margin: 2%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-bottom: 90%;
     opacity: 1;
     transition: all .25s ease-out; }
@@ -440,7 +522,6 @@ section #work {
     section #work .grid .square span {
       position: absolute;
       top: 50%;
-      right: 50%;
       opacity: 0;
       z-index: 1;
       vertical-align: bottom;
