@@ -418,8 +418,8 @@ nav {
   nav #menuToggle {
     display: block;
     position: relative;
-    top: 50px;
-    left: 50px;
+    top: 0px;
+    left: 10px;
     z-index: 1;
     user-select: none; }
   nav #menuToggle input {
@@ -507,7 +507,7 @@ section #work {
   background-color: lightblue;
   margin: 0 auto;
   max-width: 1600px; }
-  section #work .grid .square {
+  section #work .square {
     float: left;
     position: relative;
     width: 96%;
@@ -515,11 +515,11 @@ section #work {
     padding-bottom: 90%;
     opacity: 1;
     transition: all .25s ease-out; }
-    section #work .grid .square:hover {
+    section #work .square:hover {
       opacity: 0.6; }
-      section #work .grid .square:hover span {
+      section #work .square:hover span {
         opacity: 1; }
-    section #work .grid .square span {
+    section #work .square span {
       position: absolute;
       top: 50%;
       opacity: 0;
@@ -528,16 +528,17 @@ section #work {
       text-align: center;
       transition: all .25s ease-out; }
   @media (min-width: 768px) {
-    section #work .grid .square {
+    section #work .square {
       width: 45%;
       padding-bottom: 43%;
       margin: 2.5%; } }
   @media (min-width: 992px) {
-    section #work .grid .square {
+    section #work .square {
       width: 30%;
       margin: 1.66%;
       padding-bottom: 30%; } }
 
-footer #contact {
-  background-color: lightpurple;
-  height: 100vh; }
+footer {
+  background-color: rebeccapurple; }
+  footer #contact {
+    height: 100vh; }

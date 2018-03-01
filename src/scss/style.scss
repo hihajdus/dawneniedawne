@@ -42,11 +42,11 @@ nav {
 		}
 	}
 	#menuToggle
-	{
+{
 	  display: block;
 	  position: relative;
-	  top: 50px;
-	  left: 50px;
+	  top: 0px;
+	  left: 10px;
 	  z-index: 1;
 	  user-select: none;
 	}
@@ -199,7 +199,6 @@ section {
 		background-color: lightblue;
 		margin: 0 auto;
 		max-width: 1600px;			
-		.grid {
 			.square {	
 	    		float: left;
 	    		position: relative;
@@ -239,13 +238,13 @@ section {
 	    			padding-bottom: 30%;	
 				}					
 			}
-		}
 	}
 }
 
 footer {
+	background-color: rebeccapurple;
 	#contact {
-		background-color: lightpurple;
+		// background-color: lightpurple;
 		height: 100vh;
 	}
 }
