@@ -45,6 +45,15 @@ nav {
 		padding: 10px 20px;
 		text-decoration: none;
 	}
+	.svg-container {
+		position: relative; 
+		object {
+			position: absolute; 
+			width: 100px;
+			left: -7px;
+			top: -32px;
+		}
+	}
 	.menu-btn {
 		&:hover {
 			background-color: #f4f4f4;			
@@ -140,18 +149,15 @@ nav {
 		}
 	}
 }
-
-
-
 hgroup {	
 	height: 200px;
 	min-height: 300px;
+	padding-top: 62px;
 	div {
 		width: 80%;
 		margin: 0 auto;
 	}	
 }
-
 section {
 	#about {
 		background-color: lightgreen;
@@ -192,21 +198,18 @@ section {
 	    		padding-bottom: 90%;
 	    		opacity: 1;
 	    		transition: all .25s ease-out;
-	    		&:hover {
-	    			opacity: 0.6;
-	    			span {
-						opacity: 1;
-					}
-	    		}
 	    		span {
 					position: absolute;
 					top: 50%;
-					opacity: 0;
+					opacity: 1;
 					z-index: 1;
 					vertical-align: bottom;
 					text-align: center;
-					transition: all .25s ease-out;	    			
-	    		}		
+					transition: all .25s ease-out;
+				}
+				&:hover {
+					opacity: 0.6;
+				}		
 			}
 
 			@media #{$small} {
