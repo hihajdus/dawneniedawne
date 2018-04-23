@@ -379,6 +379,26 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.img-facebook {
+  background-image: url(../images/socialmedia/facebook.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.img-instagram {
+  background-image: url(../images/socialmedia/instagram.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.img-whatsapp {
+  background-image: url(../images/socialmedia/whatsapp.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.img-linkedin {
+  background-image: url(../images/socialmedia/linkedin.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 /*$color-bg: red;
 $color-text: white;
 */
@@ -389,7 +409,6 @@ $color-text: white;
   padding: 10px; }
 
 header {
-  background-color: lightyellow;
   height: 100vh; }
 
 nav {
@@ -397,7 +416,10 @@ nav {
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
-  z-index: 3; }
+  z-index: 3;
+  transition: all 0.5s; }
+  nav.scrollUp {
+    transform: translateY(-80px); }
   nav .logo {
     display: block;
     float: left;
@@ -465,9 +487,11 @@ nav {
       display: block;
       padding: 20px 20px;
       border-right: 1px solid #f4f4f4;
-      text-decoration: none; }
+      text-decoration: none;
+      text-align: center;
+      color: #d8ab4e; }
       nav ul li a:hover {
-        background-color: #f4f4f4; }
+        background-color: #EEE8AA; }
 
 @media (min-width: 768px) {
   nav .menu-icon {
@@ -490,7 +514,6 @@ hgroup {
     margin: 0 auto; }
 
 section #about {
-  background-color: lightgreen;
   height: 100vh;
   display: flex;
   flex-direction: column-reverse; }
@@ -509,7 +532,6 @@ section #about {
     display: block; }
 
 section #work {
-  background-color: lightblue;
   margin: 0 auto;
   max-width: 1600px; }
   section #work .square {
@@ -542,9 +564,38 @@ section #work {
       padding-bottom: 30%; } }
 
 footer {
-  background-color: rebeccapurple;
   height: 100vh;
   width: 100%;
   float: left; }
   footer #contact {
-    height: 100vh; }
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px 0; }
+    footer #contact .container {
+      height: 50%; }
+    footer #contact .social-media {
+      width: 100%; }
+      footer #contact .social-media .media {
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        justify-content: center; }
+        footer #contact .social-media .media .img-facebook {
+          height: 50px;
+          width: 50px;
+          display: inline-block; }
+        footer #contact .social-media .media .img-instagram {
+          height: 50px;
+          width: 50px;
+          display: inline-block; }
+        footer #contact .social-media .media .img-whatsapp {
+          height: 50px;
+          width: 50px;
+          display: inline-block; }
+        footer #contact .social-media .media .img-linkedin {
+          height: 50px;
+          width: 50px;
+          display: inline-block; }
+    footer #contact .maps {
+      width: 100%; }
