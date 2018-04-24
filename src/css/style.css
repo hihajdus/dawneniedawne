@@ -526,6 +526,24 @@ section #about {
     section #about .text-about div {
       width: 80%;
       margin: 0 auto; }
+      section #about .text-about div button {
+        display: inline-block;
+        border: none;
+        margin-top: 40px;
+        background: #d8ab4e;
+        color: #f7f7f7;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 15px 50px;
+        border-radius: 5px;
+        box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+        transition: all ease-in-out 300ms; }
+        section #about .text-about div button:hover {
+          cursor: pointer;
+          box-shadow: 0px 47px 20px -20px rgba(0, 0, 0, 0.3);
+          transform: translate(0px, -2px); }
+        section #about .text-about div button:active {
+          opacity: 0.8; }
   section #about .img-about .img-body {
     height: 100%;
     width: 100%;
@@ -541,7 +559,8 @@ section #work {
     margin: 2%;
     padding-bottom: 90%;
     opacity: 1;
-    transition: all .25s ease-out; }
+    transition: all .25s ease-out;
+    border-radius: 5px; }
     section #work .square span {
       position: absolute;
       top: 50%;
@@ -550,8 +569,6 @@ section #work {
       vertical-align: bottom;
       text-align: center;
       transition: all .25s ease-out; }
-    section #work .square:hover {
-      opacity: 0.6; }
   @media (min-width: 768px) {
     section #work .square {
       width: 45%;
@@ -581,6 +598,9 @@ footer {
         width: 80%;
         display: flex;
         justify-content: center; }
+        footer #contact .social-media .media img {
+          margin: 10px;
+          cursor: pointer; }
         footer #contact .social-media .media .img-facebook {
           height: 50px;
           width: 50px;

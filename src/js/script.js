@@ -1,9 +1,9 @@
 $(function() {
 	console.log('ready!');
 	
+	//hide nav
 	var c, currentScrollTop = 0,
 	navbar = $('nav');
-
 	$(window).scroll(function () {
 		var a = $(window).scrollTop();
 		var b = navbar.height();
