@@ -586,36 +586,36 @@ footer {
   float: left; }
   footer #contact {
     height: 100vh;
-    display: flex;
-    flex-direction: column-reverse;
     padding: 10px 0; }
     footer #contact .container {
       height: 50%; }
     footer #contact .social-media {
       width: 100%; }
-      footer #contact .social-media .media {
-        margin: 0 auto;
-        width: 80%;
-        display: flex;
-        justify-content: center; }
-        footer #contact .social-media .media img {
-          margin: 10px;
-          cursor: pointer; }
-        footer #contact .social-media .media .img-facebook {
-          height: 50px;
-          width: 50px;
-          display: inline-block; }
-        footer #contact .social-media .media .img-instagram {
-          height: 50px;
-          width: 50px;
-          display: inline-block; }
-        footer #contact .social-media .media .img-whatsapp {
-          height: 50px;
-          width: 50px;
-          display: inline-block; }
-        footer #contact .social-media .media .img-linkedin {
-          height: 50px;
-          width: 50px;
-          display: inline-block; }
+      footer #contact .social-media .catchword {
+        padding-top: 50px;
+        text-align: center; }
+      footer #contact .social-media .address {
+        padding-top: 50px;
+        display: flex; }
+        footer #contact .social-media .address .svg-container {
+          position: relative;
+          width: 50%; }
+          footer #contact .social-media .address .svg-container object {
+            position: absolute;
+            width: 450px;
+            left: 30px;
+            top: -120px;
+            z-index: -1; }
+        footer #contact .social-media .address .adress-details {
+          padding-top: 50px;
+          width: 50%; }
+          footer #contact .social-media .address .adress-details .media {
+            padding-top: 50px; }
+            footer #contact .social-media .address .adress-details .media img {
+              margin: 10px;
+              cursor: pointer;
+              height: 50px;
+              width: 50px;
+              display: inline-block; }
     footer #contact .maps {
       width: 100%; }

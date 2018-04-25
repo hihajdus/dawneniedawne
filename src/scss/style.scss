@@ -259,8 +259,8 @@ footer {
 	float: left;
 	#contact {
 		height: 100vh;
-		display: flex;
-		flex-direction: column-reverse;
+		// display: flex;
+		// flex-direction: column-reverse;
 		padding: 10px 0;
 		.container {
 			height: 50%;
@@ -268,35 +268,47 @@ footer {
 		.social-media {
 			width: 100%;
 			// background-color: orange;
-			.media {
-				margin: 0 auto;
-				width: 80%;
+			.catchword {
+				padding-top: 50px;
+				text-align: center;
+			}
+			.address {
+				padding-top: 50px;
 				display: flex;
-				justify-content: center;
-				img {
-					margin: 10px;
-					cursor: pointer;
+				// justify-content: center;
+				.svg-container {
+					position: relative;
+					width: 50%; 
+					object {
+						position: absolute;
+						width: 450px;
+						left: 30px;
+						top: -120px;
+						z-index: -1;
+					}
 				}
-				.img-facebook{
-					height: 50px;
-					width: 50px;
-					display: inline-block;
-				}
-				.img-instagram{
-					height: 50px;
-					width: 50px;
-					display: inline-block;
-				}
-				.img-whatsapp{
-					height: 50px;
-					width: 50px;
-					display: inline-block;
-				}
-				.img-linkedin{
-					height: 50px;
-					width: 50px;
-					display: inline-block;
-				}
+				.adress-details {
+					padding-top: 50px;
+					width: 50%;
+					.media {
+						padding-top: 50px;
+						img {
+							margin: 10px;
+							cursor: pointer;
+							height: 50px;
+							width: 50px;
+							display: inline-block;
+						}
+						.img-facebook{
+						}
+						.img-instagram{
+						}
+						.img-whatsapp{
+						}
+						.img-linkedin{
+						}
+					}
+				}				
 			}
 		}
 		.maps {
